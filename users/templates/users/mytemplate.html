@@ -1,0 +1,22 @@
+
+<html>
+ <head><title>Post</title></head>
+ <body>
+   <h1>My New Blog Version 0.0.1</h1> 
+   <h2>{{uname}}</h2>
+  
+
+   {% for post in post_list %}
+   <a href="{{ post }}/">{{ post }}</a>
+
+  
+   <hr />
+   {% endfor %}
+    <br/>
+	<a href='/users/add/post'>Post New Blog </a> 
+	<br/>
+	<a href='/users/viewall'>See All Blogs </a> 
+	<br/>
+
+ </body>
+</html>

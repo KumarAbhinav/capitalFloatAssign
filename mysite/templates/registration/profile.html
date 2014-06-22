@@ -1,0 +1,15 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Welcome" %}{% endblock %}
+{% block content %}
+{% url 'auth_login' as auth_login_url %}
+{% blocktrans %}
+<br/>
+
+
+<a href='/users/{{uname}}'>Your Blogs </a> 
+<br/>
+
+
+{% endblocktrans %}
+{% endblock %}
